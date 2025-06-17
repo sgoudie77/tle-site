@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE ABout Us</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Starts Here -->
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="img/tle-logo.png" alt="TLE Logo"></a>
+            <h3>Top Level English</h3>
+        </div>
+        <!-- <div class="toggle" onclick="toggleMenu();"></div> -->
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu();">About</a></li>
+                <li><a href="courses.html" onclick="toggleMenu();">Courses</a></li>
+                <li><a href="contact.html" class="active" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar Ends Here -->
+
+    <!-- Contact Hero Splash Area Starts Here -->
+    <!-- <section class="course-hero splash"></section> -->
+    <div class="splash-hero" id="contact-hero">
+        <div class="overlay-splash"></div>
+        <h2>Contact TLE</h2>
+        <p>Send Us An Email If You Have Questions</p>
+    </div>
+    <!-- contact Hero Splash Area Ends Here -->
+
+    <!-- Contact Form Starts Here -->
+    <section class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Have a question?</h2>
+            <p>If you have a question about any of the TLE courses, would like to know more information about our Discord community, English services, or live events, or you would like to make any suggestions or comments for us about ways to improve, please reach out and send us an email. Someone will reply to your email as sooon as possible .</p>
+        </div>
+        <div class="contact-form-wrapper">
+            <!-- Contact Title Starts Here -->
+            <div class="contact-title">
+                <h2>Email Us</h2>
+            </div>
+            <!-- Contact Title Ends Here -->
+            <!-- Contact Form Inputs Starts Here -->
+            <div class="contact-form">
+                <form autocomplete="off" action="https://formsubmit.co/toplevelenglish@protonmail.com" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" required="required" autocomplete="off">
+                        <span>Your Name*</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required="required" autocomplete="off">
+                        <span>Your Email*</span>
+                    </div>
+                    <div class="input-box message">
+                        <textarea type="text" name="message" required="required" autocomplete="off"></textarea>
+                        <span>Type your message*...</span>
+                    </div>
+                    <div class="input-box send">
+                        <input type="submit" name="" value="Send">
+                        <input type="hidden" name="_subject" value="New email from website!">
+                        <input type="hidden" name="_next" value="#/thankyou.html">  
+                    </div>
+                </form>
+            </div>
+            <!-- Contact Form Inputs End Here -->
+        </div>
+    </section>
+    <!-- Contact Form Ends Here -->
+    
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <div class="footer-item logo-f">
+            <img src="img/TLE-logo.png" alt="">
+        </div>
+        <div class="footer-item links"> 
+            <p>LINKS</p>
+            <ul>
+                <li>About Us</li>
+                <li>Courses</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-item social-f">
+            <p>Follow Us</p>
+            <div class="social-f-list">
+                <i class="fa-brands fa-discord" title="TLE Discord"></i>
+                <i class="fab fa-wordpress-simple" title="TLE Blog"></i>
+                <i class="devicon-twitter-original" title="TLE On X"></i>
+            </div>
+        </div>
+        <div class="footer-item newsletter">
+            <p>TLE Newsletter</p>
+            <input type="text" placeholder="Sign up here">
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <script src="script.js"></script>
+</body>
+</html>

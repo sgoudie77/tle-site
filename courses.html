@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE Courses</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Starts Here -->
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="img/tle-logo.png" alt="TLE Logo"></a>
+            <h3>Top Level English</h3>
+        </div>
+        <!-- <div class="toggle" onclick="toggleMenu();"></div> -->
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu();">About</a></li>
+                <li><a href="courses.html" class="active" onclick="toggleMenu();">Courses</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar Ends Here -->
+
+    <!-- Course Hero Splash Area Starts Here -->
+    <!-- <section class="course-hero splash"></section> -->
+    <div class="splash-hero" id="course-hero">
+        <div class="overlay-splash"></div>
+        <h2>Courses</h2>
+        <p>Choose your path</p>
+    </div>
+    <!-- Course Hero Splash Area Ends Here -->
+
+    <!-- Course Filter Button Area Starts Here -->
+    <!-- <div class="course-filter"> -->
+        <div class="btn-area course-filter">
+            <button class="filter-btn active" id="all" type="button" data-filter="all">All Courses</button>
+            <button class="filter-btn" id="conversation" type="button" data-filter="conversation">Conversation</button>
+            <button class="filter-btn" id="business" type="button" data-filter="business">Business</button>
+            <button class="filter-btn" id="ielts" type="button" data-filter="ielts">IELTS</button>
+        </div>
+    <!-- </div> -->
+    <!-- Course Filter Button Area Ends Here -->
+
+    <!-- Course Area Starts Here -->
+    <section class="course-wrapper">
+        <div class="course-inner">
+            <!-- Course One Start -->
+            <div class="course-item" data-modal-target="#modal" data-category="conversation">
+                <img src="img/course-ge.png" alt="conversation English course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-ge.png" alt="conversation English course">
+                    </div> 
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course One end -->
+            <!-- Course Two Start -->
+            <div class="course-item" data-modal-target="#modal2" data-category="business">
+                <img src="img/course-be.png" alt="business English course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal2">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-be.png" alt="business English course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>TWOOO ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Two End -->
+            <!-- Course Three Start -->
+            <div class="course-item" data-modal-target="#modal3" data-category="business">
+                <img src="img/course-email.png" alt="email English course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal3">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-email.png" alt="email English course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>THREE ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Three End -->
+            <!-- Course Four Start -->
+            <div class="course-item" data-modal-target="#modal4" data-category="business">
+                <img src="img/course-present.png" alt="presenting in English course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal4">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-present.png" alt="presenting in English course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>FOURR ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Four End -->
+            <!-- Course Five Start -->
+            <div class="course-item" data-modal-target="#modal5" data-category="business">
+                <img src="img/course-meeting.png" alt="meetings in English course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal5">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-meeting.png" alt="meetings in English course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>FIVEE ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Five End -->
+             <!-- Course Six Start -->
+            <div class="course-item" data-modal-target="#modal6" data-category="business">
+                <img src="img/course-sales.png" alt="sales and negotiating course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal6">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-sales.png" alt="sales and negotiating course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>SIXXX ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Six End -->
+            <!-- Course Seven Start -->
+            <div class="course-item" data-modal-target="#modal7" data-category="ielts">
+                <img src="img/course-ie-wr-sp.png" alt="ielts writing and speaking course">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal7">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-ie-wr-sp.png" alt="ielts writing and speaking course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>SEVEN ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Seven End -->
+            <!-- Course Eight Start -->
+            <div class="course-item" data-modal-target="#modal8" data-category="ielts">
+                <img src="img/course-ie.png" alt="">
+                <a>Learn More</a>
+            </div>
+            <div class="modal" id="modal8">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <img src="img/course-ie.png" alt="IELTS course">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>EIGHT ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque odio harum, ut totam aliquid ea perspiciatis, nostrum, ullam ducimus itaque qui quisquam! Vel corporis sint ullam, fugiat eos esse sit? Porro amet dicta aliquid nam delectus accusantium culpa laboriosam quod ratione harum! Neque dolor, hic reprehenderit quasi optio saepe. Porro amet dicta aliquid nam delectus accusantium culpa nam delectus accusantium culpa.</p>
+                        <div class="course-info-btns">
+                            <a href="#" class="buy-btn">Buy Course</a>
+                            <a data-close-button class="close-button">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Eight End -->
+        </div>
+
+        <!-- course-item overlay dark background starts here -->
+        <div id="overlay-course"></div>
+        <!-- course-item overlay dark background ends here -->
+    </section>
+    <!-- Course Area Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <div class="footer-item logo-f">
+            <img src="img/TLE-logo.png" alt="">
+        </div>
+        <div class="footer-item links"> 
+            <p>LINKS</p>
+            <ul>
+                <li>About Us</li>
+                <li>Courses</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-item social-f">
+            <p>Follow Us</p>
+            <div class="social-f-list">
+                <i class="fa-brands fa-discord" title="TLE Discord"></i>
+                <i class="fab fa-wordpress-simple" title="TLE Blog"></i>
+                <i class="devicon-twitter-original" title="TLE On X"></i>
+            </div>
+        </div>
+        <div class="footer-item newsletter">
+            <p>TLE Newsletter</p>
+            <input type="text" placeholder="Sign up here">
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
