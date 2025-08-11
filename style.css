@@ -222,7 +222,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
     margin-left: 12rem;
 }
 .hero-wrapper h1 {
@@ -376,15 +376,16 @@ section {
 
 /* Courses Section Styles Start Here */
 .courses {
+    position: relative;
+    display: flex;
+    justify-content: right;
     background-image: url(img/tle-course-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    position: relative;
-    display: flex;
-    justify-content: right;
+    width: 100%;
+    
     /* z-index: 1; */
 }
 
@@ -968,11 +969,11 @@ section {
     width: 100%;
     background: var(--clr-white);
 }
-.about-box p {
+/* .about-box p {
     max-height: 60vh;
     overflow: hidden;
-    /* font-size: var(--fs-h4); */
-}
+    
+} */
 .about-text {
     box-shadow: var(--box-shad-dark);
 }
@@ -1631,6 +1632,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:start;
+    width: 100%;
     color: var(--clr-white);
     font-size: 2rem;
     box-shadow: var(--box-shad-morph-inset);
@@ -1899,15 +1901,27 @@ footer {
         background-position: center top;
         min-height: 100vh;
 
+        position: relative;
         justify-content: center;
+        align-items: center;
         /* align-items: end; */
+        /* justify-content: center; */
         /* padding-bottom: 7.5rem; */
         /* background: linear-gradient(to right, rgba(47, 49, 54, 0.2) 10%, rgba(47, 49, 54, 0.7) 100%), url('img/hero-bg.jpg'); */
         background: rgba(47, 49, 54, 0.9), url('img/hero-bg.jpg');
+        width: 100%;
+        /* margin: 0; */
+        /* text-align: center; */
     }
-    .hero-wrapper {
+    /* .hero-wrapper { */
+        /* margin-left: 0; */
+        /* position: relative;
+        padding: 0; */
+        /* margin-left: 3rem; */
+        /* padding-right: 0; */
+    /* } */
+        .hero-wrapper {
         margin-left: 0;
-        padding-left: 0;
     }
     .hero-wrapper h1 {
         font-size: 7.5rem;
@@ -1951,16 +1965,16 @@ footer {
     width: 85%;
 }
 .testimonial-card {
-    width: 300px;
+    width: 280px;
 }
 .testimonial-upper {
-    width: 300px;
+    width: 280px;
 }
 .testimonial-upper .image-container {
     transform: translate(100%, 120%);
 }
 .testimonial-card .testimonial-text {
-    width: 300px;
+    width: 280px;
 }
 .testimonial-text h4,
 .testimonial-text p {
@@ -2041,9 +2055,12 @@ footer {
     height: auto;
 }
     
-    #discord-feed {
+#discord-feed {
     width: 300px;
     height: 400px;
+}
+.splash-hero h2 {
+    font-size: 4rem;
 }
 .course-inner {
     margin: 0 1rem 1rem 1rem;
@@ -2063,6 +2080,9 @@ footer {
 .confirmation-wrapper {
     width: 70%;
 }
+.contact-info {
+    padding: 2rem;
+}
 }
 @media (max-width: 479px) {
 .services-wrapper h2,
@@ -2075,11 +2095,11 @@ footer {
 .about-box h2,
 .contact-info h2,
 .contact-title h2 {
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
 }
 #discord-feed {
-    width: 265px;
-    height: 410px;
+    width: 250px;
+    height: 400px;
 }
 .social-box-text, .social-box-info {
     padding: 2rem;
@@ -2092,12 +2112,47 @@ footer {
 }
 .btn-area .filter-btn {
     font-size: 1.05rem;
-    width: 94px;
-    padding: 1.25rem 1rem;
+    width: 82px;
+    padding: 1.25rem .75rem;
     margin: 0 .35rem;
 }
 .modal.active {
     top: 15%;
+}
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer>div {
+    margin-bottom: 3rem;
+}
+.footer-item.social-f .social-f-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer-item.social-f i:nth-child(2) {
+    margin: 0;
+}
+.footer-item.social-f .social-f-list i {
+    margin: 0 .75rem;
+}
+.footer-item.links p {
+    text-align: center;
+    width: 100%;
+}
+.footer-item ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 }
 /* @media (max-width: 359px) {
