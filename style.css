@@ -921,7 +921,9 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* min-height: 85vh; */
 }
+
 .about-box {
     position: relative;
     display: flex;
@@ -929,22 +931,32 @@ section {
     justify-content: center;
     align-items: center;
     width: 35%;
-    height: auto;
-    min-height: 70vh;
-    text-align: justify;
+    /* height: auto; */
+    height: 70vh;
+    /* text-align: justify; */
     padding: 2.5rem;
     border-radius: var(--bor-rad);
 }
+.about.reg {
+    padding-top: 7.5rem;
+}
+.about.rev {
+    padding-bottom: 3rem;
+}
+/* .about-box.rev {
+    min-height: 70vh;
+} */
 .about-box h2,
 .about-box p {
     font-weight: 200;
 }
 .about-box h2 {
+    position: relative;
     text-transform: uppercase;
     color: var(--clr-blue);
-    position: relative;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    margin-top: -1.5rem;
 }
 .about-box h2::after {
     content: '';
@@ -955,6 +967,11 @@ section {
     width: 100%;
     background: var(--clr-white);
 }
+.about-box p {
+    max-height: 60vh;
+    overflow: hidden;
+    /* font-size: var(--fs-h4); */
+}
 .about-text {
     box-shadow: var(--box-shad-dark);
 }
@@ -964,6 +981,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     width: 35%;
+    min-height: 70vh;
     box-shadow: var(--box-shad-morph-inset);
 }
 /* About Page Styles End Here */
@@ -1192,7 +1210,9 @@ section {
     z-index: 10;
     /* width: 62.5vw; */
     width: 43.93vw;
-    height: 70vh;
+    /* width: 50vw; */
+    /* height: 70vh; */
+    height: auto;
     background: var(--clr-dark-gray-tr);
     box-shadow: var(--box-shad-dark);
   }
@@ -1207,7 +1227,9 @@ section {
     /* overflow: inherit; */
     /* max-width: 100vw; */
     /* z-index: 999; */
-    
+    width: 43.93vw;
+    height: auto;
+    padding-bottom: 2rem;
   }
   
   .modal-header {
@@ -1233,6 +1255,10 @@ section {
     letter-spacing: 1px;
     /* font-weight: bold; */
     /* text-transform: uppercase; */
+    width: 100%;
+  }
+  .modal-header .modal-title img {
+    width: 100%;
   }
   .course-info-btns {
     position: relative;
@@ -1332,7 +1358,10 @@ section {
 /* Contact Page Styles Start Here */
 .contact-wrapper {
     position: relative;
+    display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    height: auto;
 }
 .contact-info {
     position: relative;
@@ -1342,12 +1371,15 @@ section {
     align-items: center;
     text-align: justify;
     /* width: 40%; */
-    /* box-shadow: var(--box-shad-dark); */
+    box-shadow: var(--box-shad-dark);
     padding: 2rem 4rem;
     /* border-radius: var(--bor-rad); */
 
     width: 35%;
-    height: 62.5vh;
+    /* height: 62.5vh; */
+    height: auto;
+    /* max-height: 62.5vh;
+    overflow: hidden; */
 }
 /* .contact-info h3 {
      font-weight: 200;
@@ -1613,15 +1645,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85px;
-    height: 85px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     box-shadow: var(--box-shad-dark);
-    margin-top: .5rem;
+    /* box-shadow: var(--box-shad-morph); */
+    margin-top: 1.25rem;
 }
 .footer-item.logo-f img {
-    width: 92.5%;
-    height: 92.5%;
+    width: 100%;
+    height: 100%;
 }
 .footer-item.links {
     flex-direction: column;
@@ -1794,18 +1827,28 @@ footer {
 .blog-item {
     padding: 0rem;
 }
-/* .carousel-card {
-    width: 75%;
-} */
+.about-box {
+    width: 40%;
+}
+.about-box p {
+    font-size: var(--fs-h4);
+}
+.contact-info,
+.contact-form-wrapper {
+    width: 40%;
+}
 }
 @media (max-width: 768px) {
     /* responsive nav */
     .header .navbar ul {
         display: none;
     }
+    .header {
+        padding: 0 4.5rem;
+    }
     .toggle {
         position: fixed;
-        right: 6rem;
+        right: 4.5rem;
         width: 25px;
         height: 25px;
         cursor: pointer;
@@ -1816,7 +1859,7 @@ footer {
     }
     .toggle.active {
         position: fixed;
-        right: 6rem;
+        right: 4.5rem;
         background: url(img/close.png);
         background-size: 20px;
         background-position: center;
@@ -1922,7 +1965,52 @@ footer {
 .testimonial-text p {
     font-size: var(--fs-h4);
 }
-
+.about.reg {
+    flex-direction: column;
+    /* padding-top: 7.5rem; */
+}
+.about.rev {
+    flex-direction: column-reverse;
+    padding-bottom: 3.5rem;
+}
+.about-box {
+    width: 70%;
+    margin-bottom: 3rem;
+    height: auto;
+}
+.about-box p {
+    font-size: var(--fs-h4);
+}
+.btn-area .filter-btn {
+    font-size: 1.25rem;
+    width: 106px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 .45rem;
+}
+.course-item {
+    margin: 1.5rem;
+}
+.modal.active {
+    width: 85vw;
+    left: 7.5%;
+}
+.contact-wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-info,
+.contact-form-wrapper {
+    width: 70%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.contact-info {
+    margin-top: 7.5rem;
+} 
+.contact-form-wrapper {
+    margin-bottom: 7.5rem;
+}
 .footer-item.logo-f {
     width: 60px;
     height: 60px;
@@ -1931,8 +2019,12 @@ footer {
     width: 100%;
     height: 100%;
 }
+
 }
 @media (max-width: 599px) {
+    /* .header {
+        padding: 0 4.5rem;
+    } */
     .services-wrapper {
         /* width: 100%; */
         margin: 0;
@@ -1952,6 +2044,24 @@ footer {
     width: 300px;
     height: 400px;
 }
+.course-inner {
+    margin: 0 1rem 1rem 1rem;
+}
+.course-item {
+    margin: 1.2rem 2rem;
+}
+.course-item a {
+    padding: .75rem 1rem;
+}
+.modal.active {
+    top: 18%;
+}
+.contact-form {
+    padding: 0 2.5rem;
+}
+.confirmation-wrapper {
+    width: 70%;
+}
 }
 @media (max-width: 479px) {
 .services-wrapper h2,
@@ -1961,17 +2071,32 @@ footer {
     font-size: var(--fs-h2);
     font-weight: 300;
 }
-
-
-    #discord-feed {
+.about-box h2,
+.contact-info h2,
+.contact-title h2 {
+    font-size: var(--fs-h2);
+}
+#discord-feed {
     width: 265px;
     height: 410px;
+}
+.social-box-text, .social-box-info {
+    padding: 2rem;
 }
 .blog-items-title h3 {
     font-size: var(--fs-h3);
 }
 .carousel-card {
     width: 95%;
+}
+.btn-area .filter-btn {
+    font-size: 1.05rem;
+    width: 94px;
+    padding: 1.25rem 1rem;
+    margin: 0 .35rem;
+}
+.modal.active {
+    top: 15%;
 }
 }
 /* @media (max-width: 359px) {
