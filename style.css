@@ -92,6 +92,7 @@ section {
 }
 .logo img {
     height: 40px;
+    width: auto;
     padding: .5rem 0;
     border-radius: 15%;
 }
