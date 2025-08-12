@@ -62,7 +62,7 @@ section {
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 102%;
     /* background-color: rgba(0,0,0,0.8); */
 
     background-color: rgba(47,49,54,0.7);
@@ -378,7 +378,8 @@ section {
 .courses {
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     background-image: url(img/tle-course-banner.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -399,7 +400,7 @@ section {
     height: 70vh;
     padding: 3rem;
     margin-top: 6rem;
-    margin-right: 13.5rem;
+    /* margin-right: 13.5rem; */
     background-color: var(--clr-dark-gray-tr);
     border-radius: var(--bor-rad);
     box-shadow: 2px 2px 9px #000000f0;
@@ -1942,6 +1943,17 @@ footer {
         width: 60%;
         margin-bottom: 3rem;
     }
+    /* .courses {
+        background-position: top left;
+        background-size: 300px;
+        overflow: hidden;
+    } */
+    .courses {
+        justify-content: center;
+        background-image: url(img/tle-course-banner-mobile.png);
+        background-position: center top;
+        height: auto;
+    } 
     .courses-box {
         width: 60%;
     }
@@ -1965,16 +1977,16 @@ footer {
     width: 85%;
 }
 .testimonial-card {
-    width: 280px;
+    width: 270px;
 }
 .testimonial-upper {
-    width: 280px;
+    width: 270px;
 }
 .testimonial-upper .image-container {
-    transform: translate(100%, 120%);
+    transform: translate(87%, 120%);
 }
 .testimonial-card .testimonial-text {
-    width: 280px;
+    width: 270px;
 }
 .testimonial-text h4,
 .testimonial-text p {
@@ -2040,6 +2052,9 @@ footer {
     /* .header {
         padding: 0 4.5rem;
     } */
+    .logo h3 {
+        font-size: 1.75rem;
+    }
     .services-wrapper {
         /* width: 100%; */
         margin: 0;
@@ -2099,7 +2114,8 @@ footer {
 }
 #discord-feed {
     width: 250px;
-    height: 400px;
+    height: 432px;
+    padding-bottom: 1rem;
 }
 .social-box-text, .social-box-info {
     padding: 2rem;
