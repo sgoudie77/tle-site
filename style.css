@@ -397,7 +397,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 35%;
-    height: 70vh;
+    height: auto;
     padding: 3rem;
     margin-top: 6rem;
     /* margin-right: 13.5rem; */
@@ -1943,16 +1943,13 @@ footer {
         width: 60%;
         margin-bottom: 3rem;
     }
-    /* .courses {
-        background-position: top left;
-        background-size: 300px;
-        overflow: hidden;
-    } */
     .courses {
         justify-content: center;
         background-image: url(img/tle-course-banner-mobile.png);
+        /* background-size: contain; */
         background-position: center top;
         height: auto;
+        background-attachment: scroll;
     } 
     .courses-box {
         width: 60%;
@@ -2066,7 +2063,7 @@ footer {
     width: 70%;
 }
 .courses-box {
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
     height: auto;
 }
     
