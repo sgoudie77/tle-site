@@ -1831,15 +1831,15 @@ footer {
         padding: 1.25rem .75rem;
         margin: 0 .35rem;
     }
-    /* .modal.active {
-        top: 30%;
-    } */
     .modal {
         top: 18%;
     } 
     .modal-body p {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         padding: 0 1rem;
+    }
+    .modal-body-content .course-info-btns .buy-btn {
+        padding: 1rem .5rem;
     }
     .modal-body-content .course-info-btns .close-button {
         margin-left: 0;  
