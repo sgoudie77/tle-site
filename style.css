@@ -1763,7 +1763,7 @@ footer {
     .courses-box,
     .social-box-info,
     .social-box-text {
-    width: 70%;
+    width: 75%;
     }
     .courses-box {
         height: auto;
@@ -1784,8 +1784,8 @@ footer {
     .course-item a {
         padding: .75rem 1rem;
     }
-    .modal.active {
-        top: 18%;
+    .modal {
+        top: 22.5%;
     }
     .contact-form {
         padding: 0 2.5rem;
@@ -1820,6 +1820,7 @@ footer {
     }
     .blog-items-title h3 {
         font-size: var(--fs-h3);
+        margin-bottom: .5rem;
     }
     .carousel-card {
         width: 95%;
@@ -1830,9 +1831,12 @@ footer {
         padding: 1.25rem .75rem;
         margin: 0 .35rem;
     }
-    .modal.active {
+    /* .modal.active {
         top: 30%;
-    }
+    } */
+    .modal {
+        top: 18%;
+    } 
     .modal-body p {
         font-size: 1.25rem;
         padding: 0 1rem;
