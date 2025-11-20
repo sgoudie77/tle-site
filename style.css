@@ -1822,6 +1822,14 @@ footer {
         font-size: var(--fs-h3);
         margin-bottom: .5rem;
     }
+    .blog-title h4 {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    .blog-excerpt p {
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
     .carousel-card {
         width: 95%;
     }
