@@ -14,7 +14,7 @@
     <div class="header">
         <div class="logo">
             <a href="index.html"><img src="img/logo.png" alt="TLE Logo"></a>
-            <h3>Top Level English</h3>
+            <a href="index.html"><h3>Top Level English</h3></a>
         </div>
         <div class="toggle" onclick="toggleMenu();"></div>
         <div class="navbar">
@@ -40,7 +40,7 @@
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h2>Have a question?</h2>
-                <p>If you have a question about any of the TLE courses, would like to know more information about our Discord community or English services, please reach out and send us an email. Someone will reply to your email as sooon as possible .</p>
+                <p>If you have a question about any of the TLE courses or would like to know more information about our Discord community or English services, please reach out and send us an email. Someone will reply to your email as sooon as possible.</p>
             </div>
             <div class="contact-form-wrapper">
                 <!-- Contact Title Starts Here -->
@@ -50,13 +50,13 @@
                 <!-- Contact Title Ends Here -->
                 <!-- Contact Form Inputs Starts Here -->
                 <div class="contact-form">
-                    <form autocomplete="off" action="https://formsubmit.co/4cad667346dcdbbf61bfce0551a48ed7" method="POST">
+                    <form autocomplete="off" name="details" action="https://formsubmit.co/4cad667346dcdbbf61bfce0551a48ed7" method="POST">
                         <div class="input-box">
                             <input type="text" name="name" required="required" autocomplete="off">
                             <span>Your Name*</span>
                         </div>
                         <div class="input-box">
-                            <input type="email" name="email" required="required" autocomplete="off">
+                            <input type="email" name="email1" required="required" autocomplete="off">
                             <span>Your Email*</span>
                         </div>
                         <div class="input-box message">
@@ -106,6 +106,21 @@
         </div> -->
     </footer>
     <!-- Footer Section Ends Here -->
+
+    <script>
+        function validateEmail(inputText) {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (inputText.value.match(mailformat)) {
+            document.details.email1.focus();
+            return true;
+        } else {
+        alert("You have entered an invalid email address!");
+        document.details.email1.focus();
+        return false;
+            }
+        }
+        validateEmail();
+    </script>
 
     <script src="script.js"></script>
 </body>

@@ -118,6 +118,7 @@ section {
 }
 .navbar ul li a.active {
     color: var(--clr-blue);
+    font-weight: 300;
 }
 .navbar ul li::after {
     content: "";
@@ -320,7 +321,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/tle-course-banner.png);
+    background-image: url(img/courses-banner-w.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -923,6 +924,11 @@ section {
     background: var(--clr-white);
     color: var(--clr-black);
 }
+.filter-btn.active {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    box-shadow: var(--box-shad-dark);
+}
 .course-wrapper {
     align-items: baseline;
 }
@@ -1161,7 +1167,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    /* text-align: justify; */
     box-shadow: var(--box-shad-dark);
     padding: 2rem 4rem;
     width: 35%;
@@ -1392,7 +1398,7 @@ footer {
 .footer-item.links p {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 200;
+    font-weight: 300;
     width: max-content;
     color: var(--clr-blue);
 }
@@ -1401,7 +1407,6 @@ footer {
     list-style: none;
     margin-top: 1rem;
 }
-.footer-item.links p,
 .footer-item.links li {
     font-weight: 200;
     letter-spacing: 1px;
@@ -1425,6 +1430,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     width: max-content;
+    font-weight: 300;
     color: var(--clr-blue);
 }
 .footer-item.links p::after,
@@ -1656,7 +1662,7 @@ footer {
     }
     .courses {
         justify-content: center;
-        background-image: url(img/tle-course-banner-mobile.png);
+        background-image: url(img/courses-banner-m.png);
         background-position: center top;
         height: auto;
         background-attachment: scroll;
