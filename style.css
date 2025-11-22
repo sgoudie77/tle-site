@@ -1839,10 +1839,11 @@ footer {
         width: 95%;
     }
     .btn-area .filter-btn {
-        font-size: 1.05rem;
-        width: 82px;
+        font-size: 1rem;
+        /* width: 82px; */
+        width: 84px;
         padding: 1.25rem .75rem;
-        margin: 0 .35rem;
+        margin: 0 .3rem;
     }
     .modal {
         top: 18%;
