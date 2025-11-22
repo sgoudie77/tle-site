@@ -927,7 +927,6 @@ section {
 .filter-btn.active {
     background-color: var(--clr-white);
     color: var(--clr-black);
-    box-shadow: var(--box-shad-dark);
 }
 .course-wrapper {
     align-items: baseline;
