@@ -56,7 +56,7 @@
                             <span>Your Name*</span>
                         </div>
                         <div class="input-box">
-                            <input type="email" name="email1" required="required" autocomplete="off">
+                            <input type="email" name="email" required="required" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             <span>Your Email*</span>
                         </div>
                         <div class="input-box message">
@@ -107,20 +107,20 @@
     </footer>
     <!-- Footer Section Ends Here -->
 
-    <script>
+    <!-- <script>
         function validateEmail(inputText) {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (inputText.value.match(mailformat)) {
-            document.details.email1.focus();
+            document.details.email.focus();
             return true;
         } else {
         alert("You have entered an invalid email address!");
-        document.details.email1.focus();
+        document.details.email.focus();
         return false;
             }
         }
         validateEmail();
-    </script>
+    </script> -->
 
     <script src="script.js"></script>
 </body>
